@@ -1,29 +1,46 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  	<router-view></router-view>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@font-face {
+  font-family: "haymakerregular";
+  src: url("./assets/fonts/haymaker-webfont.eot");
+  src: url("./assets/fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("./assets/fonts/haymaker-webfont.woff") format("woff"), 
+  url("./assets/fonts/haymaker-webfont.ttf") format("truetype"), 
+  url("./assets/fonts/haymaker-webfont.svg#haymakerregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'blanchcaps_inline';
+  src: url('./assets/fonts/blanch_caps_inline-webfont.eot');
+  src: url('./assets/fonts/blanch_caps_inline-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/blanch_caps_inline-webfont.woff') format('woff'),
+       url('./assets/fonts/blanch_caps_inline-webfont.ttf') format('truetype'),
+       url('./assets/fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	background-color: #d4d4d4;
+}
+#app {
+	width: 100%;
+	height: 100vh;
 }
 </style>

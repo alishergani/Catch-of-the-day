@@ -1,16 +1,10 @@
 # catch-of-the-day-vue
 
-## Project setup
-```
+App on VueJS mini shop for buying fish products
+
 npm install
 ```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
-
-### Compiles and minifies for production
 ```
 npm run build
 ```
